@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<link rel="icon" type="image/png" href="/favicon.png" />
+	<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+	
+	<title>BRUM.AI</title>
+
+	<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+
+	<style type="text/css">
+		body {
+			font-family: 'Roboto', sans-serif;
+			padding-top: 20%;
+		}
+		
+		h1 {
+			font-size: 7em;
+			font-weight: normal;
+			margin: 0;
+			text-align: center;
+			width: 100%;
+		}
+		
+		p {
+			font-weight: normal;
+			text-align: center;
+		}
+		
+		@-webkit-keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+		@-moz-keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+		@keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+		
+		.fade-in {
+			opacity: 0;
+			-webkit-animation: fadeIn ease-in 1;
+			-moz-animation: fadeIn ease-in 1;
+			animation: fadeIn ease-in 1;
+			
+			-webkit-animation-fill-mode: forwards;
+			-moz-animation-fill-mode: forwards;
+			animation-fill-mode: forwards;
+			
+			-webkit-animation-duration: 1s;
+			-moz-animation-duration: 1s;
+			animation-duration: 1s;
+		}
+		
+		.fade-in.fast {
+			-webkit-animation-delay: .1s;
+			-moz-animation-delay: .1s;
+			animation-delay: .1s;
+		}
+		
+		.fade-in.slow {
+			-webkit-animation-delay: 1.25s;
+			-moz-animation-delay: 1.25s;
+			animation-delay: 1.25s;
+		}
+	</style>
+</head>
+<body>
+	<h1 class="fade-in fast">BRUM.AI</h1>
+	<p class="fade-in slow">A placeholder pager for the design makeover of BRUM.AI 2020 - <a href="https://brum.ai">https://brum.ai</a></p>
+	
+	<!-- Google Analytics to come here -->
+	<!--<script></script>-->
+</body>
+</html>
