@@ -1,0 +1,123 @@
+
+/* BRUM.AI CSS
+-- CLIENT BRUM.AI details - URL
+-- Designer Design Lady that did the design - URL
+-- Coding versions
+-- Code v1.0 Atanas Kozarev github.com/ultraasi-atanas
+-- Code v1.0 Date April 2020 */
+
+
+/* Full view elements */
+html, body, header, .view {
+  height: 100%;
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+@media (max-width: 740px) {
+  html, body, header, .view {
+    height:100vh;
+    max-width: 100%;
+  }
+}
+
+/* FONTS */
+@font-face {
+  font-family: BrumAI-text;
+  src: url(assets/bevietnam-regular.ttf);
+}
+
+@font-face {
+  font-family: BrumAI-headings;
+  src: url(assets/heavitas.ttf);
+}
+
+/* Default text, Anywhere */
+* {
+  font-family: BrumAI-text;
+}
+
+
+/* Headings */
+.heading-green {
+  font-family: BrumAI-headings;
+  text-align: center;
+  vertical-align: middle;
+  font-weight: bold;
+  color: GreenYellow;
+}
+
+.heading-white {
+  font-family: BrumAI-headings;
+  text-align: center;
+  vertical-align: middle;
+  font-weight: bold;
+  color: White;
+}
+
+/* Section-1 Header with logo */
+#section-1 {
+ background-image: url('assets/section-1.jpg');
+ background-repeat: no-repeat;
+ background-size: cover;
+ background-position: center center;
+}
+
+/* Section-2 Our Mission */
+#section-2 {
+  background-color: #342C3C;
+}
+
+/* Section-3 Come Along - uses card class bootstrap */
+#section-3 {
+  background-image: url('assets/section-3.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+/* Section-4 Social Wall Walls.io */
+#section-4 {
+  background-color: #171E40; /* used MidnightBlue before */
+}
+
+/* Section-5 Podcast */
+#section-5 {
+  background-color: #342C3C;
+}
+/* Section-6 Volunteers */
+#section-6 {
+  background-image: url('assets/section-6.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+/* bullet styles */
+li {
+  line-height: 1.4;
+}
+
+ul li {
+  list-style-image: url("assets/bullet.png");
+}
+
+/* Buttons */
+.button {
+  background-color: #B395F2; /* Like purple */
+  border: none;
+  color: #282C34;  /* Text colour - Dark Gray like Atom */
+  padding: 16px 32px;
+  text-align: center;
+  font-size: 1.2em;
+  margin: 4px 2px;
+  opacity: 0.6;
+  transition: 0.3s;
+  display: inline-block;
+  text-decoration: none;
+  cursor: pointer;
+  vertical-align:middle;
+}
+
+.button:hover {opacity: 1}

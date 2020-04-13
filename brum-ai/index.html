@@ -1,72 +1,155 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	
-	<title>BRUM.AI</title>
 
-	<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+  <head>
+    <meta charset="utf-8">
+    <!-- Bootstrap 4 is mobile-first - viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap 4 CDN -->
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <!-- Our internal CSS sheet last -->
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+    <title> BRUM AI </title>
+  </head>
 
-	<style type="text/css">
-		body {
-			font-family: 'Roboto', sans-serif;
-			padding-top: 20%;
-		}
-		
-		h1 {
-			font-size: 5.5em;
-			font-weight: normal;
-			margin: 0;
-			text-align: center;
-			width: 100%;
-		}
-		
-		h4 {
-			font-weight: normal;
-			text-align: center;
-		}
-		
-		p {
-			font-weight: normal;
-			text-align: center;
-		}
-		
-		@-webkit-keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
-		@-moz-keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
-		@keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
-		
-		.fade-in {
-			opacity: 0;
-			-webkit-animation: fadeIn ease-in 1;
-			-moz-animation: fadeIn ease-in 1;
-			animation: fadeIn ease-in 1;
-			
-			-webkit-animation-fill-mode: forwards;
-			-moz-animation-fill-mode: forwards;
-			animation-fill-mode: forwards;
-			
-			-webkit-animation-duration: 1s;
-			-moz-animation-duration: 1s;
-			animation-duration: 1s;
-		}
-		
-		.fade-in.fast {
-			-webkit-animation-delay: .1s;
-			-moz-animation-delay: .1s;
-			animation-delay: .1s;
-		}
-		
-		.fade-in.slow {
-			-webkit-animation-delay: 1.25s;
-			-moz-animation-delay: 1.25s;
-			animation-delay: 1.25s;
-		}
-	</style>
-</head>
-<body>
-	<h1 class="fade-in fast">BRUM.AI</h1>
-	<h4 class="fade-in slow">A placeholder page for the design makeover of BRUM.AI 2020 </h4>
-	
-	<!-- Google Analytics to come here -->
-	<!--<script></script>-->
-</body>
+  <body>
+
+  <!-- /* Section-1 Header with logo -->
+  <header>
+    <!-- Full Page Intro -->
+    <div class="view" id="section-1">
+    <!-- Mask & flexbox options-->
+      <div class="mask rgba-black-light align-items-center">
+        <!-- Content -->
+        <div class="container">
+          <!--Grid row-->
+          <div class="row">
+            <!--Grid column-->
+            <div class="col-md-12 mb-4 text-light text-center">
+              <a class="btn btn-outline-white fadeInDown">HOME</a>
+              <a class="btn btn-outline-white fadeInDown">MISSION</a>
+              <a class="btn btn-outline-white fadeInDown">ATTEND</a>
+              <a class="btn btn-outline-white fadeInDown">CONTENT</a>
+              <a class="btn btn-outline-white fadeInDown">VOLUNTEER</a>
+              <a class="btn btn-outline-white fadeInDown">SPEAK</a>
+              <hr class="hr-light my-4 fadeInDown">
+            </div>
+            <!-- End Grid column-->
+          </div>
+          <!-- End Grid row-->
+        </div>
+        <!-- End Content -->
+      </div>
+      <!-- End Mask & flexbox options-->
+    </div>
+    <!-- End Full Page Intro -->
+    </header>
+
+    <!-- /* Section-2 Our Mission */ -->
+    <div id="section-2" class="container-fluid text-white align-items-center py-5 px-4">
+      <!-- Content Row -->
+      <div class="row">
+       <div class="col-sm-1"><!-- nothing here --></div>
+       <div class="col-sm-2">
+         <h1 class="heading-green">OUR MISSION</h1>
+       </div>
+       <div class="col-sm-1"><!-- nothing here --></div>
+       <div class="col-sm-8">
+         <p>We're working to become the home of AI in the midlands. We believe that AI represents the most impactful technological shift humankind has ever seen and we want to make sure that it is used for good. To this end, we're doing three things:</p>
+         <ul>
+           <li>Fostering entrepreneurship by supporting startups that use AI for good [coming soon]</li>
+           <li>Helping developers to get started in AI</li>
+           <li>Bringing the region's researchers, industry, developers and founders together</li>
+         </ul>
+       </div>
+      </div>
+    </div>
+
+
+    <!-- /* Section-3 Come Along */ -->
+    <div id="section-3" class="container-fluid text-white align-items-center py-5 px-4">
+      <!-- Content Row -->
+      <div class="row">
+        <div class="col"><!-- nothing here --></div>
+        <div class="col">
+          <h1 class="heading-white">COME ALONG!</h1>
+        </div>
+        <div class="col"><!--   nothing here --></div>
+        <div class="col">
+          <p>We meet at least once a month (usually more).</p>
+          <p>Check out our schedule on <a href="http://meetup.com/brum-ai" target="_self">http://meetup.com/brum-ai</a></p>
+        </div>
+      </div>
+    </div>
+
+
+
+    <!-- /* Section-4 Social Wall Walls.io */ -->
+    <div id="section-4" class="container-fluid p-4 text-white" >
+      <div class="row">
+       <div class="col-sm-1"><!-- nothing here --></div>
+       <div class="col-sm-2" id="mission-div">
+         <h1 class="heading-green">#BRUM.AI @BRUM_AI</h1>
+       </div>
+       <div class="col-sm-1"><!-- nothing here --></div>
+       <div class="col-sm-8">
+         <p>This is our social wall</p>
+         <iframe allowfullscreen id="wallsio-iframe" src="https://walls.io/b6ayu?nobackground=1&amp;show_header=0" style="border:0;height:600px;width:100%" title="My social wall"></iframe>
+       </div>
+      </div>
+    </div>
+
+    <!-- /* Section-5 Podcast */ -->
+    <div id="section-5" class="container-fluid text-white align-items-center py-5 px-4">
+        <!-- Content Row -->
+        <div class="row">
+          <div class="col"><!-- nothing here --></div>
+          <div class="col">
+            <h5 class="heading-white">CHECK OUT THE LATEST</h5>
+            <h1 class="heading-white">BRUM.AI PODCAST</h1>
+          </div>
+          <div class="col"><!--   nothing here --></div>
+          <div class="col">
+            <p> << A widget or XML feel from PODBEAN comes here >> </p>
+            <p> Alternatively a shuffle of images with links. Needs ongoing maintenance</p>
+          </div>
+        </div>
+    </div>
+
+    <!-- Section-6 Volunteers */ -->
+    <div id="section-6" class="container-fluid text-white align-items-center py-5 px-4">
+
+      <div class="row">
+         <div class="col-sm-2"></div>
+         <div class="col-sm-8">
+           <h1 class="heading-white">WE'RE LOOKING FOR VOLUNTEERS</h1>
+         </div>
+         <div class="col-sm-2"><!-- nothing here --></div>
+      </div>
+
+      <div class="row">
+         <div class="col-sm-2"></div>
+         <div class="col-sm-8">
+           <p class="lead">BrumAI is run entirely by volunteers for free. We think Birmingham can become the UK city of choice to start an AI startup and we think that's well worth volunteering for. If you'd like to muck in and help make a big impact, get in touch!</p1>
+           </div>
+         <div class="col-sm-2"></div>
+       </div>
+
+      <div class="row">
+         <div class="col-sm-5"></div>
+         <div class="col-sm-2">
+          <p><button class="button">FIND OUT MORE</button></p>
+        </div>
+        <div class="col-sm-5"></div>
+      </div>
+    </div>
+
+
+<!-- testing area below-->
+
+
+  </body>
 </html>
