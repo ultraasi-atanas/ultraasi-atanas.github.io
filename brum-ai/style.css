@@ -1,0 +1,220 @@
+
+/* BRUM.AI
+-- PROJECT BRUM.AI details
+-- URL https://brum.ai
+-- Designer Kylie Lee
+-- URL https://www.behance.net/kydsnr | https://kydsnr.com/ | https://www.behance.net/gallery/89957149/BrumAI-Branding
+-- Coding versions
+-- Code v1.0 Atanas Kozarev github.com/ultraasi-atanas | Date April 2020
+-- Code v1.2 TBC
+ */
+
+
+/* Full view elements */
+html, body, header, .view {
+  height: 100%;
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+  top:0;
+}
+
+@media (max-width: 768px) {
+  html, body, header, .view {
+    height:100vh;
+    max-width: 100%;
+    top:0;
+  }
+}
+/* FONTS  font-weight: normal|bold|bolder|lighter|number|initial|inherit; */
+
+@font-face {
+  font-family: BrumAI-text;
+  src: url(static/bevietnam-regular.ttf);
+}
+
+@font-face {
+  font-family: BrumAI-headings;
+  src: url(static/heavitas.ttf);
+}
+
+/* Default text, Anywhere */
+* {
+  font-family: BrumAI-text;
+}
+
+
+/* Headings */
+
+.heading {
+  font-family: BrumAI-headings;
+  text-align: center;
+  vertical-align: middle;
+  font-weight: 900;
+}
+
+.heading-green {
+  color: #ccfa3b; //YellowGreen-ish
+}
+
+.heading-white {
+  font-size: 3.5em; /* a larger font */
+  color: White;
+}
+
+.heading-gray {
+  font-size: 2.2em;
+  color: #b5b4b7; /*Gray*/
+}
+
+.heading-orange {
+  font-size: 2.05em; /* Orange heading is smaller than the rest */
+  font-weight: 300; /* a lighter font */
+  color: #fd823b /*Orange*/
+}
+
+@media only screen and (max-width: 812px) {
+  .heading-green {
+    font-size: 1.9em;
+  }
+
+  .heading-white {
+    font-size: 1.9em;
+  }
+
+  .heading-gray {
+    font-size: 1.3em;
+  }
+
+  .heading-orange {
+    font-size: 1.2em;
+  }
+}
+
+/* bullet styles */
+li {
+  line-height: 1.4;
+}
+
+ul li {
+  list-style-image: url("static/bullet.png");
+}
+
+/* Buttons */
+.button {
+  background-color: #B395F2; /* Like purple */
+  border: none;
+  color: #282C34;  /* Text colour - Dark Gray like Atom */
+  padding: 16px 32px;
+  text-align: center;
+  font-size: 1.2em;
+  margin: 4px 2px;
+  opacity: 0.6;
+  transition: 0.3s;
+  display: inline-block;
+  text-decoration: none;
+  cursor: pointer;
+  vertical-align: middle;
+}
+
+.button:hover {
+  opacity: 1
+}
+
+
+/* + + + + + + + + + */
+/* Logo and Logotext */
+.hero-block {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+ #logo {
+   height:433px;
+   max-height:433px;
+   margin-top: 89px;
+}
+
+@media only screen and (max-width: 812px) {
+  #logo {
+  height:213px;
+  max-height:213px;
+  margin-top: 89px;
+  }
+}
+
+/* #logo-text-div {
+  height:433px;
+  max-height:433px;
+}
+
+@media only screen and (max-height: 768px) {
+  #logo-text-div {
+    height:213px;
+    max-height:213px;
+  }
+} */
+
+/* iPad :: min-values in media rule */
+@media only screen and (min-width:765px) and (min-height:1023px) {
+  #logo {
+    height:433px;
+    max-height:433px;
+    margin-top: 89px;
+  }
+
+  #logo-text-div {
+    height:433px;
+    max-height:433px;
+  }
+
+  .heading-gray {
+    font-size: 2.2em;
+    color: #b5b4b7; /*Gray*/
+  }
+}
+
+ /* Section-1 Header with logo */
+ #section-1 {
+  background-image: /*linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),*/ url("static/section-1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+
+ }
+
+
+/* Section-2 Our Mission */
+#section-2 {
+  background-color: #342C3C;
+}
+
+/* Section-3 Come Along - uses card class bootstrap */
+#section-3 {
+  background-image: url('static/section-3.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+/* Section-4 Social Wall Walls.io */
+#section-4 {
+  background-color: #171E40; /* used MidnightBlue before */
+}
+
+/* Section-5 Podcast */
+#section-5 {
+  background-color: #342C3C;
+}
+/* Section-6 Volunteers */
+#section-6 {
+  background-image: url('static/section-6.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
