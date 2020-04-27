@@ -51,6 +51,7 @@ html, body, header, .view {
   text-align: center;
   vertical-align: middle;
   font-weight: 900;
+  text-shadow: #342C3C 0.05rem 0.05rem 0.295rem;
 }
 
 .heading-green {
@@ -64,7 +65,9 @@ html, body, header, .view {
 
 .heading-gray {
   font-size: 2.2em;
+  font-weight: 300; /* a lighter font */
   color: #b5b4b7; /*Gray*/
+  text-shadow: Black 1px 1px 2px; /*heavier shadow */
 }
 
 .heading-orange {
@@ -102,25 +105,31 @@ ul li {
 
 /* Buttons */
 .button {
-  background-color: #B395F2; /* Like purple */
   border: none;
   color: #282C34;  /* Text colour - Dark Gray like Atom */
   padding: 16px 32px;
   text-align: center;
+  text-decoration: none;
+  display: inline-block;
   font-size: 1.2em;
   margin: 4px 2px;
+  cursor: pointer;
   opacity: 0.6;
   transition: 0.3s;
-  display: inline-block;
-  text-decoration: none;
-  cursor: pointer;
   vertical-align: middle;
+}
+
+.b-PurpleGradient {
+    background-color: #B395F2; /* Background color - Like purple */
+}
+
+.b-YellowGreen {
+    background-color: #ccfa3b; /* Background color - Yellow Green */
 }
 
 .button:hover {
   opacity: 1
 }
-
 
 /* + + + + + + + + + */
 /* Logo and Logotext */
@@ -175,6 +184,7 @@ ul li {
   .heading-gray {
     font-size: 2.2em;
     color: #b5b4b7; /*Gray*/
+    text-shadow: 3px 3px 3px black;
   }
 }
 
@@ -188,10 +198,9 @@ ul li {
 
  }
 
-
 /* Section-2 Our Mission */
 #section-2 {
-  background-color: #342C3C;
+  background-color: #342C3C;  /* dark blue gray */
 }
 
 /* Section-3 Come Along - uses card class bootstrap */
