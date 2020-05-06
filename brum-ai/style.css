@@ -26,11 +26,14 @@ html, body, header, .view {
     top:0;
   }
 }
+
+
 /* FONTS  font-weight: normal|bold|bolder|lighter|number|initial|inherit; */
 
 @font-face {
   font-family: BrumAI-text;
   src: url(static/bevietnam-regular.ttf);
+
 }
 
 @font-face {
@@ -38,9 +41,10 @@ html, body, header, .view {
   src: url(static/heavitas.ttf);
 }
 
-/* Default text, Anywhere */
+/* ALL TEXT */
 * {
   font-family: BrumAI-text;
+  letter-spacing: normal;
 }
 
 
@@ -107,11 +111,12 @@ ul li {
 .button {
   border: none;
   color: #282C34;  /* Text colour - Dark Gray like Atom */
-  padding: 16px 32px;
+  padding: 16px 16px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
   font-size: 1.2em;
+  font-family: BrumAI-headings;
   margin: 4px 2px;
   cursor: pointer;
   opacity: 0.6;
@@ -120,18 +125,24 @@ ul li {
 }
 
 .b-PurpleGradient {
-    background-color: #B395F2; /* Background color - Like purple */
+    background-color: #B395F2; /* Button Background color - Like purple */
 }
 
 .b-YellowGreen {
-    background-color: #ccfa3b; /* Background color - Yellow Green */
+    background-color: #ccfa3b; /* Button Background color - Yellow Green */
+    padding: 16px 36px;
+
+}
+
+.b-White {
+    background-color: White; /* Button Background color - White */
 }
 
 .button:hover {
   opacity: 1
 }
 
-/* + + + + + + + + + */
+
 /* Logo and Logotext */
 .hero-block {
   text-align: center;
@@ -208,7 +219,8 @@ ul li {
   background-image: url('static/section-3.png');
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center center;
+  background-position: center;
+  min-height: 500px;
 }
 
 /* Section-4 Social Wall Walls.io */
@@ -218,12 +230,12 @@ ul li {
 
 /* Section-5 Podcast */
 #section-5 {
-  background-color: #342C3C;
+  background-color: #342C3C;  /* some dark colour */
 }
 /* Section-6 Volunteers */
 #section-6 {
   background-image: url('static/section-6.png');
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center center;
+  background-position: center;
 }
