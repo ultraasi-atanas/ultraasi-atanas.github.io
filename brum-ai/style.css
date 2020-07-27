@@ -80,7 +80,8 @@ html, body, header, .view {
   color: #fd823b /*Orange*/
 }
 
-@media only screen and (max-width: 812px) {
+/* used to be max-width:812px */
+@media only screen and (max-width: 375px) {
   .heading-green {
     font-size: 1.9em;
   }
@@ -159,7 +160,8 @@ ul li {
    margin-top: 89px;
 }
 
-@media only screen and (max-width: 812px) {
+/* used to be 812px */
+@media only screen and (max-width: 375px) {
   #logo {
   height:213px;
   max-height:213px;
@@ -212,6 +214,7 @@ ul li {
 /* Section-2 Our Mission */
 #section-2 {
   background-color: #342C3C;  /* dark blue gray */
+  overflow: hidden;
 }
 
 /* Section-3 Come Along - uses card class bootstrap */
