@@ -5,8 +5,7 @@
 -- Designer Kylie Lee
 -- URL https://www.behance.net/kydsnr | https://kydsnr.com/ | https://www.behance.net/gallery/89957149/BrumAI-Branding
 -- Coding versions
--- Code v1.0 Atanas Kozarev github.com/ultraasi-atanas | Date April 2020
--- Code v1.2 TBC
+-- Code v1.0 Atanas Kozarev github.com/ultraasi-atanas | Date July 2020
  */
 
 
@@ -33,7 +32,6 @@ html, body, header, .view {
 @font-face {
   font-family: BrumAI-text;
   src: url(static/bevietnam-regular.ttf);
-
 }
 
 @font-face {
@@ -99,15 +97,6 @@ html, body, header, .view {
   }
 }
 
-/* bullet styles */
-li {
-  line-height: 1.4;
-}
-
-ul li {
-  list-style-image: url("static/bullet.png");
-}
-
 /* Buttons */
 .button {
   border: none;
@@ -132,7 +121,6 @@ ul li {
 .b-YellowGreen {
     background-color: #ccfa3b; /* Button Background color - Yellow Green */
     padding: 16px 36px;
-
 }
 
 .b-White {
@@ -142,7 +130,6 @@ ul li {
 .button:hover {
   opacity: 1
 }
-
 
 /* Logo and Logotext */
 .hero-block {
@@ -161,7 +148,7 @@ ul li {
 }
 
 /* used to be 812px */
-@media only screen and (max-width: 375px) {
+@media only screen and (max-width: 812px) {
   #logo {
   height:213px;
   max-height:213px;
@@ -208,13 +195,47 @@ ul li {
   background-size: cover;
   background-position: center;
   position: relative;
+ }
 
+ /* Navigation within Section 1 */
+ #topnavbar {
+ min-height: 4.5rem;
+ transition: 0.4s; /* Adds a transition effect when the padding is decreased */
+ }
+
+#topnavbar a {
+  color: #7562A3; /* light violet  */
+  font-size: 1.0em;
+  font-weight: 100; /* a lighter font */
+  font-family: BrumAI-headings;
+  padding: 0em 0.5em;
+}
+
+#topnavbar a:hover {
+  color: #b5b4b7; /* Gray */
+}
+
+ /* add space between links in navbar  */
+ .nav-separator {
+ color: #7562A3; /* light violet  */
+ font-size: 1.0em;
+ font-weight: 100; /* a lighter font */
+ font-family: BrumAI-headings;
  }
 
 /* Section-2 Our Mission */
 #section-2 {
   background-color: #342C3C;  /* dark blue gray */
   overflow: hidden;
+}
+
+/* bullet styles */
+#section-2 li {
+  line-height: 1.4;
+}
+
+#section-2 ul li {
+  list-style-image: url("static/bullet.png");
 }
 
 /* Section-3 Come Along - uses card class bootstrap */
