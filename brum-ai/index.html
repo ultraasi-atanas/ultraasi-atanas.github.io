@@ -7,9 +7,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Bootstrap 4 CDN -->
     <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
-    <!-- Latest compiled JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
     <!-- Our internal CSS sheet last -->
     <link rel="stylesheet" type="text/css" href="style.css">
     <title> BRUM AI </title>
@@ -19,41 +21,33 @@
   <!-- /* Section-1 Header -->
     <div class="view" id="section-1">
       <!--NAVIGATION-->
-      <div class="container-fluid d-flex justify-content-center">
-      <nav class="navbar navbar-expand-sm navbar-dark d-print" id="topnavbar">
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
+      <nav id="topnavbar" class="navbar sticky-top navbar-expand-md navbar-dark ustify-content-center">
+        <!-- Navbar Brand -->
+        <a class="navbar-brand" href="#"></a>
+        <!-- Toggler/collapsibe Button -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#brumai-navbar">
+        <span class="navbar-toggler-icon"></span>
+        </button>
 
-          <div class="collapse navbar-collapse" id="navbarResponsive">
-            <ul class="navbar-nav">
-              <li class="nav-item active">
-                <a class="nav-link" href="#">HOME <span class="sr-only">(current)</span></a>
-              </li>
-              <li class="nav-separator">|</li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">MISSION</a>
-              </li>
-              <li class="nav-separator">|</li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">ATTEND</a>
-              </li>
-              <li class="nav-separator">|</li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">CONTENT</a>
-              </li>
-              <li class="nav-separator">|</li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">VOLUNTEER</a>
-              </li>
-              <li class="nav-separator">|</li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">SPEAK</a>
-              </li>
-            </ul>
-          </div>
+          <!-- Navbar links -->
+          <div class="collapse navbar-collapse" id="brumai-navbar">
+          <ul class="navbar-nav">
+            <li class="nav-item"><a href="#" class="nav-link active">Home <span class="sr-only">(current)</span></a></li>
+            <li class="navbar-separator d-none d-md-block">|</li>
+            <li class="nav-item"><a href="#section-2" class="nav-link">Mission</a></li>
+            <li class="navbar-separator d-none d-md-block">|</li>
+            <li class="nav-item"><a href="#section-3" class="nav-link">Attend</a></li>
+            <li class="navbar-separator d-none d-md-block">|</li>
+            <li class="nav-item"><a href="#section-4" class="nav-link">Content</a></li>
+            <li class="navbar-separator d-none d-md-block">|</li>
+            <li class="nav-item"><a href="#section-6" class="nav-link">Volunteer</a></li>
+            <li class="navbar-separator d-none d-md-block">|</li>
+            <li class="nav-item"><a href="#section-6" class="nav-link">Speak</a></li>
+          </ul>
+        </div>
       </nav>
-      </div>
+
+
       <!-- HERO TEXT -->
         <div class="hero-block">
             <img src="static/brumai-web.png" id="logo" alt="BRUM AI Logo Lime Graffiti Stencil">
@@ -65,10 +59,9 @@
       </div>
 
     <!-- /* Section-2 Our Mission */ -->
-    <div id="section-2" class="container-fluid text-white align-items-center py-5 px-4">
-
+    <section id="section-2">
+    <div class="container-fluid text-white align-items-center py-5 px-4">
       <div class="row py-5"></div>
-
       <div class="row">
        <div class="col-sm-1"></div>
        <div class="col-sm-2">
@@ -84,15 +77,14 @@
        </div>
        <div class="col-sm-2"></div>
      </div>
-
-
      <div class="row py-5"></div>
-
     </div>
+  </section>
 
 
     <!-- /* Section-3 Come Along */ -->
-    <div id="section-3" class="container-fluid text-white align-items-center py-5 px-4">
+    <section id="section-3">
+    <div class="container-fluid text-white align-items-center py-5 px-4">
 
       <div class="row py-5">
          <div class="col-sm-2"><!-- nothing here --></div>
@@ -114,8 +106,8 @@
            </div>
          <div class="col-sm-2"><!-- nothing here --></div>
        </div>
-
     </div>
+  </section>
 
 
 
@@ -154,8 +146,8 @@
            <div class="col-sm-3"><!-- nothing here --></div>
            <div class="col-sm-6 py-5">
               <!-- new widget -->
-             <!-- start feedwind code --> 
-             <script type="text/javascript" src="https://feed.mikle.com/js/fw-loader.js" preloader-text="Loading" data-fw-param="131447/"></script> 
+             <!-- start feedwind code -->
+             <script type="text/javascript" src="https://feed.mikle.com/js/fw-loader.js" preloader-text="Loading" data-fw-param="131447/"></script>
              <!-- end feedwind code -->
           </div>
           <div class="col-sm-3"><!-- nothing here --></div>
