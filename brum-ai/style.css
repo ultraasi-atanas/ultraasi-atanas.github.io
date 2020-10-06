@@ -1,11 +1,5 @@
 
 /* BRUM.AI
--- PROJECT BRUM.AI details
--- URL https://brum.ai
--- Designer Kylie Lee
--- URL https://www.behance.net/kydsnr | https://kydsnr.com/ | https://www.behance.net/gallery/89957149/BrumAI-Branding
--- Coding versions
--- Code v1.0 Atanas Kozarev github.com/ultraasi-atanas | Date July 2020
  */
 
 
@@ -204,12 +198,28 @@ html, body, header, .view {
 }
 /* Section-6 Volunteers */
 #section-6 {
-  background-image: url('static/section-6.png');
+  background-image: url('static/section-6.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
-
+/* Footer Section */
+.footer-class {
+    width: 100%;
+    height: 9rem;
+    background: #282424 none repeat scroll 0% 0%;
+    display: flex;
+    -moz-box-pack: center;
+    justify-content: center;
+    -moz-box-align: center;
+    align-items: center;
+    color: #FFFFFF;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.footer-icon {
+  height: 20px;
+}
 
 @media only screen and (max-width: 375px) {
   .heading-green {
