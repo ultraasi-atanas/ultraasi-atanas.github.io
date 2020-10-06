@@ -132,7 +132,7 @@ html, body, header, .view {
 
  /* Section-1 Header with logo */
  #section-1 {
-  background-image: /*linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),*/ url("static/section-1web.jpg");
+  background-image: /*linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),*/ url("static/section-1.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -186,7 +186,7 @@ html, body, header, .view {
 
 /* Section-3 Come Along - uses card class bootstrap */
 #section-3 {
-  background-image: url('static/section-3.png');
+  background-image: url('static/section-3.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
