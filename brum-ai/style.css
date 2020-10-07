@@ -1,6 +1,5 @@
 
-/* BRUM.AI
- */
+/* BRUM.AI */
 
 
 /* Full view elements */
@@ -10,6 +9,7 @@ html, body, header, .view {
   margin: 0;
   padding: 0;
   top:0;
+  background-color: #342C3C; /* for while it's loading */
 }
 
 @media (max-width: 768px) {
@@ -85,27 +85,29 @@ html, body, header, .view {
   font-family: BrumAI-headings;
   margin: 4px 2px;
   cursor: pointer;
-  opacity: 0.6;
+  opacity: 1;
   transition: 0.3s;
   vertical-align: middle;
 }
 
-.b-PurpleGradient {
+.button:hover {
+  opacity: 0.6
+}
+
+.b-purple {
     background-color: #B395F2; /* Button Background color - Like purple */
 }
 
-.b-YellowGreen {
+.b-yellowgreen {
     background-color: #ccfa3b; /* Button Background color - Yellow Green */
     padding: 16px 36px;
 }
 
-.b-White {
+.b-white {
     background-color: White; /* Button Background color - White */
 }
 
-.button:hover {
-  opacity: 1
-}
+
 
 /* Logo and Logotext */
 .hero-block {
